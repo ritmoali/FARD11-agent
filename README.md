@@ -1,0 +1,1 @@
+# fardai-azure-agent
