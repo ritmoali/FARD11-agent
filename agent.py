@@ -1,10 +1,10 @@
-from langchain_community.llms import Ollama
+from langchain_ollama import OllamaLLM
 from langchain_community.agent_toolkits.load_tools import load_tools
 from langchain.agents import initialize_agent
 from langchain.agents.agent_types import AgentType
 
 # Load LLaMA 3 model via Ollama
-llm = Ollama(model="llama3")
+llm = OllamaLLM(model="llama3")
 
 # Load tools (e.g., math tool)
 tools = load_tools(["llm-math"], llm=llm)
